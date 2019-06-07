@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>GIA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CSS">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="author" content="Курочкина Елизавета">
+    <link rel="Shortcut Icon" href="gia.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="lab11.css">
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid" id="gia">
+            <div class="container">
+                <h1 id="g1">Джиа Каранджи</h1>
+                <!-- <h1 id="g2">Каранджи</h1> -->
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="navbar-collapse collapse show" id="navbarSupportedContent" style>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#karusel">Джиа и Анджелина<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#myPill">Биография Джиа<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#film">Фильм<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button id="login" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Войти
+                    </button>
+                    <button id="logout" type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModal">Выйти</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <ul class="nav flex-column" class="nav nav-pills" id="myPill" role="tablist">
+                    <li class="nav-link active">
+                        <a class="nav-link" id="tab-javascript" data-toggle="tab" href="#content-javascript" role="tab"
+                            aria-controls="content-javascript" name="modelbus">
+                            Модельный бизнес
+                        </a>
+                    </li>
+                    <li class="nav-link active">
+                        <a class="nav-link" id="tab-css" data-toggle="tab" href="#content-css" role="tab"
+                            aria-controls="content-css">
+                            Личная жизнь и наркозависимость
+                        </a>
+                    </li>
+                    <li class="nav-link active">
+                        <a class="nav-link" id="tab-bootstrap" data-toggle="tab" href="#content-bootstrap" role="tab"
+                            aria-controls="content-bootstrap">
+                            Интересные факты и смерть
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myPillContent">
+                    <div class="tab-pane fade show active" id="content-javascript" role="tabpanel"
+                        aria-labelledby="tab-javascript">
+                        <p>В Нью-Йорке Джиа познакомилась с Вильгельминой Купер, в прошлом моделью, владелицей
+                            собственного
+                            модельного агентства. Начинающую модель начали приглашать на съемки. Сначала заказы были
+                            небольшими, однако вскоре лицо Джии стало узнаваемым, а сама модель стала весьма
+                            востребованной.
+                            А потрясающая способность девушки перевоплощаться в любой образ, будь то роковая
+                            красотка или
+                            невинная простушка, добавляла модели привлекательности в глазах работодателей.</p>
+                        <img src="giaandv.jpg" style="width:100%" alt="giaANDv">
+                        Карьера девушки стремительно шла вверх, с моделью мечтали поработать именитые модельеры и
+                        фотографы, а фото Джии Каранджи украшали многочисленные обложки журналов и рекламных
+                        проспектов.
+                        В 1978-м девушке предложили сняться обнаженной. Фотограф Крис Вон Уондженхеим предвидел
+                        скандальную известность этих снимков. Джиа приняла столь смелое предложение, еще раз
+                        доказав,
+                        что готова на любые образы и перевоплощения. Визажистом в этой фотосессии стала Синди
+                        Линтер.
+                        <img src="golay.jpg" style="width:100%" alt="golay">
+                        Снимки удались на славу: вскоре изображения нагой Каранджи, стоящей около забора, наделали
+                        много
+                        шума, взбудоражив общественность и повернув развитие модельного бизнеса на 360 градусов. Уже
+                        спустя год, в 1979-м, Джиа снялась для обложек британского, французского и американского
+                        Vogue,
+                        а также для американского журнала «Космополитен». Фотографии для «Космо», где девушка
+                        снялась в
+                        оригинальном желтом купальнике, позже назовут лучшими снимками модели.
+                        <img src="cosmo.jpg" style="width:100%" alt="cosmo">
+                        Завоевав славу и популярность, Джиа Каранджи стала соглашаться исключительно на те съемки,
+                        которые казались интересными. Более того, девушка порой проявляла характер, отказываясь от
+                        фотосессий, если ей не нравились одежда, макияж или прическа. К сожалению, столь яркая
+                        карьера
+                        Джии Каранджи закончилась, едва успев начаться.
+                        <img src="super.jpg" style="width:100%" alt="supermodel">
+                        После работы девушка часто посещала клубы и бары Нью-Йорка, славившиеся свободными нравами и
+                        доступными наркотиками. Сначала модель попробовала кокаин, показавшийся ей легкой шалостью и
+                        способом расслабиться и отдохнуть. Затем, в 1980-м, перешла на героин. Это случилось сразу
+                        после
+                        смерти ее подруги и наставницы Вильгельмины Купер. Девушке хотелось отвлечься от скорби по
+                        близкому человеку, и героин помогал в этом как нельзя лучше.
+                        <p><img src="last.jpg" style="width:100%" alt="lastphoto"></p>
+
+                        <a href="#modelbus"><i class="fas fa-angle-up"></i>Наверх</a>
+                    </div>
+                    <div class="tab-pane fade" id="content-css" role="tabpanel" aria-labelledby="tab-css">
+                        Личная жизнь Джии Каранджи, несмотря на богатство, красоту и популярность девушки, не
+                        складывалась. Близкими подругами модели стали визажист Синди Линтер, а также коллеги по
+                        модельному бизнесу Джулия Фостер и Дженис Дикинсон, которые были любовницами Джии.
+                        <img src="girls.jpg" style="width:100%" alt="girls">
+                        Помимо любви к девушкам у Джии была безумная страсть к наркотикам...
+                        Зависимость Джии Каранджи стала очевидна достаточно быстро. После того как от работы с
+                        девушкой
+                        отказались несколько агентств, модель быстро пошла по наклонной. Джиа тратила огромные
+                        деньги на
+                        то, чтобы достать очередную дозу, мысли о наркотиках вытеснили все из ее головы. Девушка все
+                        дальше уходила из реального мира.
+                        <img src="nark.jpg" style="width:100%" alt="narkotiki">
+                        Друзья и родственники модели предприняли попытку спасти Джию, девушка даже проходила курс
+                        реабилитации в филадельфийской клинике. Казалось, еще не все потеряно. Однако, окончив
+                        лечение,
+                        Джиа снова связалась с компанией, употреблявшей наркотики. Модель арестовывали за вождение
+                        машины в нетрезвом виде, также девушка крала деньги из дома матери, чтобы купить новую дозу.
+                        В
+                        1981-м Джиа снова попыталась пройти лечение в наркологической клинике, но новость о гибели
+                        ее
+                        друга, фотографа Криса Вон Уондженхеима, выбила модель из колеи и толкнула обратно в пучину
+                        наркотического забытья.
+                        <img src="nark2.jpg" style="width:100%" alt="narkotiki">
+                        Последнюю попытку вернуться к нормальной жизни Джиа предприняла в 1984 году. Под давлением
+                        близких девушка шесть месяцев провела на лечении в клинике. В этот момент от огромных
+                        гонораров
+                        модели не осталось ни доллара, и Джии Каранджи пришлось жить на пособие штата. Выписавшись
+                        из
+                        клиники, девушка, на первый взгляд, пришла в себя. Джиа устроилась на работу в супермаркет,
+                        даже
+                        записалась на курсы в колледж. Но силы воли бывшей модели хватило на три месяца — потом Джиа
+                        исчезла, вероятно, вернувшись к друзьям по игле.
+                        <p><img src="nark3.jpg" style="width:100%" alt="narkotiki"></p>
+                        В 1986 году стало известно, что Джиа Каранджи попала в больницу. У девушки подозревали
+                        сильнейшую пневмонию. К тому моменту кожа Джии сплошь покрылась язвами и рубцами, а также
+                        следами уколов. Через некоторое время Каранджи выписали, однако спустя месяц девушку снова
+                        госпитализировали — и снова с пневмонией. Тогда стало понятно, что надо искать причины
+                        болезни.
+                        Правда оказалась страшной: Джии диагностировали СПИД. Страшная болезнь разъедала Джию
+                        Каранджи
+                        изнутри. После этого девушка прожила только полгода.
+                        <p><img src="pps.jpg" style="width:100%" alt="die"></p>
+                        <a href="#modelbus"><i class="fas fa-angle-up"></i>Наверх</a>
+                    </div>
+                    <div class="tab-pane fade" id="content-bootstrap" role="tabpanel" aria-labelledby="tab-bootstrap">
+                        Джулия Фостер (одна из муз Джии) будет вспоминать:
+                        <p id="c2">"Она искала чью-то любовь, однажды Джиа пришла в мой дом посреди ночи, и я
+                            впустила ее, а она хотела только, чтобы ее кто-то обнял. Это было очень грустно"
+                        </p>
+                        Возможно, тяга к женскому обществу, а также попытка забыться в наркотическом опьянении стали
+                        следствием недостатка внимания матери в раннем возрасте.
+                        Горькая правда заключается в том, что, только умирая, девушка обрела то, о чем мечтала всю
+                        жизнь, - внимание матери. Кэтлин Каранджи будет до последнего рядом с дочерью, не позволяя
+                        никому ухаживать за ней. За месяц до смерти Джию Каранджи перевели в больничный изолятор, а
+                        18
+                        ноября 1986 года девушки не стало.
+                        <img src="grob.jpg" style="width:100%" alt="grob">
+                        Смерть Джии Каранджи оказалась неожиданной для многих:
+                        болезнь и зависимость бывшей модели стараниями матери не афишировались.
+                        <p id="c3">"Те годы были сумасшедшими, — вспоминала позже мать Джии. — Я говорила моему
+                            бывшему
+                            мужу, что
+                            он должен быть готов к любым новостям, потому что она была способна на что угодно. Люди
+                            в
+                            таком
+                            состоянии сделают все что угодно ради наркотиков. Воровство, даже убийство. Я понимала,
+                            что
+                            в
+                            любой день могу получить письмо о том, что моя дочь мертва"
+                        </p>
+                        Похороны Джии Каранджи прошли спустя три дня после смерти девушки. Джию хоронили в закрытом
+                        гробу - настолько болезнь изуродовала лицо и тело девушки. Панихида прошла в кругу самых
+                        близких
+                        людей: на тот момент признаться, что Джиа Каранджи умерла от СПИДа, значило покрыть позором
+                        ее
+                        имя.
+                        <p><a href="#modelbus"><i class="fas fa-angle-up"></i>Наверх</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <h1 id="film">Фильм 1998 г. "<a href="https://gidfilm.ru/video/609272-Djia-Film">Джиа</a>"</h1>
+
+                <img src="film.jpg" class="img-thumbnail" alt="film" style="width:38%" align="left" vspase="10" hspace="10">
+
+                <p><b>жанр:</b> драма, мелодрама, биография</p>
+                <p><b>слоган:</b> «Слишком красива, чтобы умереть. Слишком неистова, чтобы жить»</p>
+                <p><b>возраст:</b> 18+</p>
+                <p><b>время:</b> 120 мин.</p>
+                <p><b>в ролях:</b> Анджелина Джоли (Джиа), Элизабет Митчелл (Линда), Мила Кунис (Джиа в молодости)
+                </p>
+                <p>Основанная на реальных событиях история всемирно известной супер-модели по имени Джиа Мари
+                    Каранджи. В конце семидесятых, эту женщину называли королевой мирового подиума. До этого она
+                    была
+                    обыкновенной девушкой, работавшей мойщицей посуды в заброшенном кафе на окраинах города.</p>
+                <p>Спустя годы после смерти Джии Каранджи выйдет фильм под названием «Джиа», рассказывающий о судьбе
+                    этой талантливой девушки, жизнь которой оказалась так нелепо сломана. Главную роль в картине
+                    сыграла
+                    Анджелина Джоли, признавшаяся, что биография Джии слишком похожа на ее собственную. В фильме
+                    откровенно показаны отношения Джии и Линды (девушки, созданной по образу визажиста и подруги
+                    Джии —
+                    Синди Линтер). Заканчивается картина цитатой из дневника Джии Каранджи, который так и не был
+                    опубликован полностью:</p>
+
+                <p id="c1">"Жизнь и смерть. Энергия и покой. Если я остановилась сегодня, это все же того
+                    стоило, и даже ошибки, которые я сделала и которые я бы исправила, если бы могла, боль, что
+                    сжигала меня и оставила шрамы в моей душе, — это все стоило того, чтобы мне позволили идти туда,
+                    куда я шла: к этому аду на земле, к этому раю на земле..."
+                </p>
+                <h2>Трейлер</h2>
+                <video controls="controls" style="width:100%">
+                    <source src="tr.mp4">
+                </video>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner" id="karusel">
+            <div class="carousel-item active" >
+                <!-- <img src="kar1.jpg" alt="gia angl" width="1100" height="500"> -->
+                <img src="kar1.jpg" alt="gia angl" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="kar2.jpg" alt="gia angl" width="1100" height="500"> -->
+                <img src="kar2.jpg" alt="gia angl" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <!-- <img src="kar3.jpg" alt="gia angl" width="1100" height="500"> -->
+                <img src="kar3.jpg" alt="gia angl" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <p><a href="#g1"><i class="fas fa-angle-up"></i>Наверх</a></p>
+    <footer>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <p class="display-5">Copyright &copy; 2019. Курочкина Е.С.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" id="abc">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Войти</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="was-validated">
+                        <div class="form-group">
+                            <label for="uname">Имя пользователя</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Введите имя пользователя"
+                                name="uname" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Пожалуйста, заполните это поле.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Пароль</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Введите пароль"
+                                name="pswd" required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Пожалуйста, заполните это поле.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary " id="vvod">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lab.js"></script>
+    <script src="https://kit.fontawesome.com/dbdd086d6f.js"></script>
+    <script src="lab11.js"></script>
+</body>
+
+</html>
