@@ -1,0 +1,49 @@
+#gia
+{ 
+  background: url(g.jpg) 100% 100%;
+  background-size: contain;
+} 
+#g1{
+    color: #FFF;
+     
+}
+#g2{
+    color: #FFF;
+    
+}
+#c1{
+    font-family: 'Kaushan Script', cursive;
+}
+
+#c2{
+  font-family: 'Kaushan Script', cursive;
+}
+
+#c3{
+  font-family: 'Kaushan Script', cursive;
+}
+ 
+  @media (min-width: 544px) { html {
+    font-size: 1.6rem;
+  }
+  
+} 
+
+/* //Устройствах среднего (планшеты, 768px и выше)   */
+@media (min-width: 768px) {html {
+    font-size: 1.4rem;
+  }
+} 
+
+/* // Крупных устройств (настольных компьютеров, 992px и выше)   */
+@media (min-width: 992px) {  html {
+    font-size: 1.2rem;
+  }
+} 
+
+/* // Очень больших устройств (большие компьютеры, 1200px и выше)   */
+@media (min-width: 1200px) {  html {
+    font-size: 1rem;
+  }
+} 
+
